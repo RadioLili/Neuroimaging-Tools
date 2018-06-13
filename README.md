@@ -14,6 +14,6 @@ Steps.
 5. I'm working with a MAC computer, if you are a windows or linux user, please edit the code (line 38), and change the number 4 for number 3, this is for delete the '.' '..' 'ds.store' files from dir variable, sorry.
 
 # NLAB_TTEST
-nlab_test is a simple MATLAB-based script that allows to perform (1) t-test or (2) mann-whitney test, between two groups with n variables. The input file MUST include a first column with 0 or 1 in order to classify the groups, for instance, healthy group = 0, pathologic group = 1. All columns are expected to have headers. All variables are expected to be numeric. See example in the dataset_example_ttest file. 
+nlab_test is a simple MATLAB-based script that allows to perform (1) t-test or (2) mann-whitney test, between two groups with n variables. The input file MUST include a first column with 0 or 1 in order to classify the groups, for instance, healthy group = 1, pathologic group = 0. All columns are expected to have headers. All variables are expected to be numeric. See example in the dataset_example_ttest file. 
 
 Results include average (or median), min, max, standard deviation for each group. h (lilietest) may be 0 if both groups are normally distributed, or 1 if at least one of the groups is not normally distributed. h (t-test or mann-whitney test) may be 0 if the hypothesis null is accepted, or 1 if it is rejected at the 5% significance level. p-value for t-test, or mann-whitney test, is also included. A spreadsheet file is generated including the input data.
