@@ -23,3 +23,9 @@ fs_run is a very simple bash-based script. It allows to perform the FreeSurfer p
 
 In the terminal, you must ensure to be in the root folder (cd ./root_folder). Then, run the script.
 FreeSurfer (https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall) need to be installed before using the script.
+
+# NII_CON
+nii_con allows to convert a large amount of dicom files into nifti files without having problems related to CPU memory (out of memory). It performs a one-by-one process.
+Create a root folder with all the dicom folders within it, they can be wheter different series of the same patient, same series of different patients, or whatever. They just need to be a dicom folder containing dicom files, and all the dicom folders must be within the root folder. That's it.
+Now, run the script within the root folder. All the dicom files will be converted to nifti files, and they will be in a nifti folder within the root folder.
+-d -e -i -g -r options are 'y', so, it is unlikely to have problems related to filenames. .bval and .bvec files are also exported if they exist.
