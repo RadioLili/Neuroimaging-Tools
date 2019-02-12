@@ -10,7 +10,7 @@ Steps.
 1. Organize a folder with all the connectivity files inside, and rename each file with a code or a name (this will be use as reference for each matrix as subject ID).
 2. Run the script, it will ask for a folder, select the folder created before.
 3. You will get a file with all the connectivity values for all subjects. The names of the columns have a format such as 'c120w164', with means connectivity between 120 and 164 areas. Information of labels is in the brainsuite_labeldescription file.
-4. If you are going to analyze groups, it is recommended to use filenames such as CON1, CON2, CON3, for control group for instance, and PAT1, PAT2, PAT3 for patologic group.
+4. If you are going to analyze groups, it is recommended to use filenames such as CON1, CON2, CON3, for control group for instance, and PAT1, PAT2, PAT3 for pathological group.
 5. for Windows users, please use the _win_ file.
 
 # NLAB_TTEST
