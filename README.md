@@ -17,3 +17,9 @@ Steps.
 nlab_test is a simple MATLAB-based script that allows to perform (1) t-test or (2) mann-whitney test, between two groups with n variables. The input file MUST include a first column with 0 or 1 in order to classify the groups, for instance, healthy group = 1, pathologic group = 0. All columns are expected to have headers. All variables are expected to be numeric. See example in the dataset_example_ttest file. 
 
 Results include average (or median), min, max, standard deviation for each group. h (lilietest) may be 0 if both groups are normally distributed, or 1 if at least one of the groups is not normally distributed. h (t-test or mann-whitney test) may be 0 if the hypothesis null is accepted, or 1 if it is rejected at the 5% significance level. p-value for t-test, or mann-whitney test, is also included. A spreadsheet file is generated including the input data.
+
+# FS_RUN
+fs_run is a very simple bash-based script. It allows to perform the FreeSurfer pipeline process (conversion, recon-all all, and qdec) for n files. Organize a root folder with all the nifti (.nii.gz) files within it. The name of the files are used for identify the subjects, thus, it is recommended to use filenames such as CON1.nii.gz, CON2.nii.gz, and so on for control subjects, and PAT1.nii.gz, PAT2.nii.gz ... for pathological subjects. 
+
+In the terminal, you must ensure to be in the root folder (cd ./root_folder). Then, run the script.
+FreeSurfer (https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall) need to be installed before using the script.
